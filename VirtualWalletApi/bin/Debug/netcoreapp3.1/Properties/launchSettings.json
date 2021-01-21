@@ -16,8 +16,8 @@
       "environmentVariables": {
         "TOKEN_AUDIENCE": "Value",
         "APP_NAME": "Virtual Wallet API",
-        "DB_CONNECTION": "Data Source=den1.mssql7.gear.host;Initial Catalog=virtualwallet;User Id=virtualwallet;Password=Bv702s3-_W1u;MultipleActiveResultSets=true",
-        "TOKEN_SECRET": "d19c1c46009b8cbd2f397ff9ab7414f7db05ffb7",
+        "DB_CONNECTION": "",
+        "TOKEN_SECRET": "",
         "APP_DESCRIPTION": "A RESTful API For Virtual Wallet Basic Services",
         "TOKEN_ACCESS_EXP": "5",
         "ASPNETCORE_ENVIRONMENT": "Development",
