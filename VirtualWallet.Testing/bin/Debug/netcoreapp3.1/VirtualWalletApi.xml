@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VirtualWalletApi</name>
+    </assembly>
+    <members>
+        <member name="M:VirtualWalletApi.Controllers.CustomerController.Post(VirtualWalletApi.Data.RequestModels.CommandRequestModels.SignUpRequestModel)">
+            <summary>
+            Endpoint to signup a customer. 
+            </summary>
+            <param name="signUpRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualWalletApi.Controllers.CustomerController.Authenticate(VirtualWalletApi.Data.RequestModels.QueryRequestModels.LoginRequestModel)">
+            <summary>
+            Endpoint to authenticate a customer. 
+            </summary>
+            <param name="loginRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualWalletApi.Controllers.WalletController.Post(VirtualWalletApi.Data.RequestModels.CommandRequestModels.CreateWalletRequestModel)">
+            <summary>
+            Endpoint to create wallet. The label field is optional 
+            </summary>
+            <param name="createWalletRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualWalletApi.Controllers.WalletController.Fund(VirtualWalletApi.Data.RequestModels.CommandRequestModels.FundWalletRequestModel)">
+            <summary>
+            Endpoint to fund wallet. Only accountNumber and amount fields are required
+            </summary>
+            <param name="fundRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualWalletApi.Controllers.WalletController.Withdraw(VirtualWalletApi.Data.RequestModels.CommandRequestModels.WithdrawFundRequestModel)">
+            <summary>
+            Endpoint to fund wallet. Only accountNumber and amount fields are required
+            </summary>
+            <param name="withdrawRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualWalletApi.Controllers.WalletController.FindTransaction(System.Guid)">
+            <summary>
+            Endpoint to get wallet transaction's details by Id
+            </summary>
+            <param name="transId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualWalletApi.Controllers.WalletController.GetTransactions(VirtualWalletApi.Data.ResponseModels.QueryResponseModels.GetTransactionsRequestModel)">
+            <summary>
+            Endpoint to get all wallet transactions. Type Possible Values{ DEPOSIT = 1,WITHDRAW = 2}, Status Possible Values {APPROVED = 1,PENDING = 2, DECLINED = 3}
+            Sort Possible Values{ ASC, DESC}
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
